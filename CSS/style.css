@@ -120,7 +120,7 @@ li a{
 }
 
 .timeline-content {
-    padding: 20px; /* pc */
+    text-wrap: normal;
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -179,65 +179,105 @@ footer{
     padding: 1em;
     background-color: #1d1d1d2c;
 }
-
+.submit{
+    background-color: rgb(55, 55, 55);
+    border: none;
+    border-radius: 10em;
+    padding: 10px;
+}
+.submit:hover{
+    transition: 1s;
+    padding: 20px;
+    background-color: white;
+}
 /* Media Query*/
 /* Pour les écrans de moins de 600px */
 @media (max-width: 600px) {
-    /*Partie header*/
-    .container{
-        display: block;
-        margin: 3em; 
-        height: 120vh;
+    /* Partie header */
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2em auto;
+        height: auto;
+        width: 90%;
     }
-    .header-title{
-        font-size: xxx-large;
-        padding: 1em;
-        margin-top: 2em;
+    .header-title {
+        font-size: 2.5rem;
+        text-align: center;
+        padding: 1em 0.5em;
+        margin-top: 1em;
     }
-    .header-presentation{
-        margin: 3em;
+    .header-presentation {
+        margin: 2em auto;
+        text-align: center;
+        width: 90%;
     }
-    /*Partie timeline*/
-    #timeline{
-        height: 300vh;
+    
+    /* Partie timeline */
+    #timeline {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .timeline-item::before {
-        right: -10px; 
+        display: none;
     }
-    #timeline-title{
-        font-size: xxx-large;
-        padding: 10px;
+    #timeline-title {
+        font-size: 2.5rem;
+        text-align: center;
+        padding: 0.5em;
     }
-    /*TD BOX (Partie work)*/
-    #work{
-        height: 180vh;
+    .timeline-content {
+        text-wrap: wrap;
+        width: 300%;
+        text-align: center;
     }
-    #td-box1,  #td-box2, #td-box3{
-        padding: 100px;
+    
+    /* TD BOX (Partie work) */
+    #work {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-    #td-box1:hover,  #td-box2:hover, #td-box3:hover{
-        transition: 1s;
-        padding: 30%;
+    #td-box1, #td-box2, #td-box3 {
+        padding: 2em;
+        width: 80%;
+        text-align: center;
     }
-    .td-box-button{
+    #td-box1:hover, #td-box2:hover, #td-box3:hover {
+        transition: 0.5s;
+        padding: 2.5em;
+    }
+    .td-box-button {
         margin-top: 10px;
     }
     .td-box:hover .td-box-button {
-        transition: 1s;
+        transition: 0.5s;
         display: inline-block;
         background-color: #000d14;
-        border-radius: 10em;
+        border-radius: 50px;
         padding: 10px;
         color: white;
     }
-    /* Partie contact*/
-    #contact{
-        display: block;
+    
+    /* Partie contact */
+    #contact {
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
     }
-    #bloc2{
+    #bloc2 {
         margin-top: 10px;
+        width: 90%;
+        text-align: center;
     }
 }
+
   
   /* Pour les écrans entre 600px et 1250px */
 @media (min-width: 601px) and (max-width: 1250px) {
