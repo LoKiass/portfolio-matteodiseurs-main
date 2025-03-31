@@ -47,6 +47,7 @@ li{
     display: inline-block;
 }
 .li-left{ 
+    padding: 10px;
     position: fixed; 
     right: 0;
 }
@@ -137,6 +138,10 @@ li a{
     line-height: 1.4;
 }
 /*Partit Work*/
+#work-title{
+    color: rgb(255, 255, 255);
+    text-align: center
+}
 h1{
     color: #000d14;
 }
@@ -236,7 +241,13 @@ footer{
     }
     
     /* TD BOX (Partie work) */
+    #work-title{
+        font-size: 2.5rem;
+        color: rgb(255, 255, 255);
+        text-align: center
+    }
     #work {
+        padding-top: 45px;
         height: auto;
         display: flex;
         flex-direction: column;
@@ -244,7 +255,7 @@ footer{
     }
     #td-box1, #td-box2, #td-box3 {
         padding: 2em;
-        width: 80%;
+        width: 100%;
         text-align: center;
     }
     #td-box1:hover, #td-box2:hover, #td-box3:hover {
@@ -276,9 +287,11 @@ footer{
         width: 90%;
         text-align: center;
     }
+    .li-footer{
+        padding: 10px;
+    }
 }
 
-  
   /* Pour les écrans entre 600px et 1250px */
 @media (min-width: 601px) and (max-width: 1250px) {
     .header{
@@ -365,7 +378,9 @@ footer{
     #work{  
         height: 75vh;
     }
-
+    #work-title{
+        font-size: 40px;
+    }
     .work-container {
         margin-top: 30px;
         display: flex;
@@ -398,6 +413,7 @@ footer{
 
     /* Partie contacte */
     #contact{
+        padding: 25px;
         display: flex; 
         justify-content: space-between; 
         gap: 20px; 
@@ -473,12 +489,16 @@ footer{
         left: 0;
         text-align: right;
     }
-
+    .timeline-content{
+        padding: 20px;
+    }
     /* Work */
     #work{  
         height: 60vh;
     }
-    
+    #work-timeline{
+        font-size: 40px;
+    }
     .work-container {
         margin-top: 30px;
         display: flex;
